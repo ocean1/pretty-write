@@ -1,0 +1,15 @@
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+
+/annoyware.synctex.gz
+*-blx.bib
+*.run.xml
+*.tdo
+*.synctex.gz
+*.toc
