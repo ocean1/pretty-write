@@ -3,14 +3,15 @@
 This work-in-progress document contains practical guidelines for writing
 research-grade computer science theses for master students.
 
-- [PrettyWrite: Practical Thesis-writing Guidelines for Master Students](#prettywrite--practical-thesis-writing-guidelines-for-master-students)
   * [Writing Guidelines for a Research Thesis](#writing-guidelines-for-a-research-thesis)
     + [Writing Guidelines](#writing-guidelines)
     + [Procedure](#procedure)
-    + [Outline](#outline)
-
+    + [Outline Example](#outline-example)
+  * [Latex tips](#latex-tips)
 
 ## Writing Guidelines for a Research Thesis
+
+While writing your thesis, after writing a huge section, or a chapter, try verifying your writing against these recommendations.
 
 ### Writing Guidelines
 
@@ -20,13 +21,20 @@ research-grade computer science theses for master students.
 - write in direct form
     - OK: "We have implemented a simple predictor that takes N inputs"
     - KO: "A simple predictor that takes N inputs has been implemented"
-
 - write in a simple way
 - do not use fancy words because you want your text to be "cooler"
 - do not write for your advisor
 - write uniformly
 - it is perfectly OK to use repetitions (forget about what your high-school teacher told you)
 - avoid synonyms: they confuse the reader
+- stick to a constant and coeherent a naming convention, if you define the instance of an object as "Pluto", don't refer to it as "Jack" or "dog" later on
+- avoid abuse of capital words, which makes the text heavier
+- avoid constructions such as ``please refer to~\cref{fig:xx} for a visual representation of the program`` -- embed in the text what you want to describe and prefer more lightweight constructions: ``\thesystem, depicted in~\cref{fig:xx}, is composed of multiple components...``, ``\thesystem (\Cref{fig:xx}) ...``
+- avoid ``refer to the sources listed in the bibliography`` to explain something, write down in a concise way the 2 or 3 most important points that can help the reader understand
+- always verify to cite sources for: assumptions, introducing topics and existing definitions and works
+- you are allowed to put references to blogposts, tweets, pastebins, but don't overdo it, stick to relevant and insightful references, and be sure to vet the information contained thereby
+- always use `~` before citations (i.e., foobar~\cite{ref})
+- citations never go before a full stop (i.e., foobar.~\cite{ref})
 
 ### Procedure
 
@@ -41,7 +49,7 @@ research-grade computer science theses for master students.
 9. Ping your advisor if you don't receive an answer in 5 days.
 10. Incorporate your advisor's comments and send your thesis to print.
 
-### Outline
+### Outline Example
 
 1. Introduction
     1. [contextualize the domain]
@@ -118,5 +126,9 @@ research-grade computer science theses for master students.
     4. [wrapup the limitations and future works]
     5. [give your vision on the future]
 
+## Latex tips
 
-## Guidelines for material attached to the thesis (i.e., code, data)
+ +  for tool names, definitions and other recurring terms you might want to change later, define a new latex command like \nameofobject, \tool, \nameofprocess
+ +  for acronyms use the [acronyms]() package
+ +  for references use the [cleveref](http://tug.ctan.org/macros/latex/contrib/cleveref/cleveref.pdf) package
+ +  for long listing of code (for example, longer than 4 lines) don't inline them, but embed them in floating object and reference them (like you would do with an image)
