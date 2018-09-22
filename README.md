@@ -3,6 +3,13 @@
 This work-in-progress document contains practical guidelines for writing
 research-grade computer science theses for master students.
 
+- [PrettyWrite: Practical Thesis-writing Guidelines for Master Students](#prettywrite--practical-thesis-writing-guidelines-for-master-students)
+  * [Writing Guidelines for a Research Thesis](#writing-guidelines-for-a-research-thesis)
+    + [Writing Guidelines](#writing-guidelines)
+    + [Procedure](#procedure)
+    + [Outline](#outline)
+
+
 ## Writing Guidelines for a Research Thesis
 
 ### Writing Guidelines
@@ -110,3 +117,6 @@ research-grade computer science theses for master students.
     3. [aposteriori summary of the results]
     4. [wrapup the limitations and future works]
     5. [give your vision on the future]
+
+
+## Guidelines for material attached to the thesis (i.e., code, data)
