@@ -33,8 +33,6 @@ While writing your thesis, after writing a huge section, or a chapter, try verif
 - avoid ``refer to the sources listed in the bibliography`` to explain something, write down in a concise way the 2 or 3 most important points that can help the reader understand
 - always verify to cite sources for: assumptions, introducing topics and existing definitions and works
 - you are allowed to put references to blogposts, tweets, pastebins, but don't overdo it, stick to relevant and insightful references, and be sure to vet the information contained thereby
-- always use `~` before citations (i.e., foobar~\cite{ref})
-- citations never go before a full stop (i.e., foobar.~\cite{ref})
 
 ### Procedure
 
@@ -132,3 +130,5 @@ While writing your thesis, after writing a huge section, or a chapter, try verif
  +  for acronyms use the [acronyms]() package
  +  for references use the [cleveref](http://tug.ctan.org/macros/latex/contrib/cleveref/cleveref.pdf) package
  +  for long listing of code (for example, longer than 4 lines) don't inline them, but embed them in floating object and reference them (like you would do with an image)
+ + always use `~` before citations (i.e., foobar~\cite{ref})
+ + citations never go before a full stop (i.e., foobar.~\cite{ref})
